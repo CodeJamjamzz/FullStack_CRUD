@@ -44,7 +44,7 @@ const TableList : React.FC<TableListProps> = ({onOpen, searchTerm, tableData, se
                 <td >{student.department}</td>
                 <td >
                   <button className="btn btn-sm rounded-full bg-blue-500 text-white w-20">
-                    {student.isActive ? "Activate" : "Deactivate" }
+                    {student.isactive ? "Activate" : "Deactivate" }
                   </button>
                 </td>
                 <td >

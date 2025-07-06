@@ -37,6 +37,11 @@ const ModalForm: React.FC<ModalFormProps> = ({
         isActive: status,
       };
       await OnSubmit(studentData); // Call the onSubmit prop with the student data
+      setName(""); // Reset the form fields
+      setProgram("");  
+      setDepartment("");
+      setYearLevel("");
+      setStatus(false);
       onClose(); // Close the modal after submission
     } catch (error) {
       console.error("Error submitting form:", error);
