@@ -18,6 +18,7 @@ Watch the demo here:
 
 ### 🛠️ Backend
 - **Node.js with Express.js** – Server-side framework to handle API requests and responses
+- **PostgreSQL** – Relational database used to store and manage application data
 
 ---
 
@@ -25,12 +26,11 @@ Watch the demo here:
 
 - **nodemon** – Automatically restarts the server when files change (for faster development)
 - **dotenv** – Loads environment variables from a `.env` file (to keep sensitive info secure)
-- **axios** – Makes HTTP requests from the frontend to the backend (e.g., GET, POST, etc.)
+- **axios** – Makes HTTP requests (used to fetch data from a third-party API)
 - **cors** – Allows communication between the frontend and backend even if they are on different ports
 
 ---
 
 ## 📝 Description
 
-The app demonstrates fullstack operations such as adding, displaying, updating, and deleting data from a database. It is designed to help students understand how front-end and back-end parts work together in a modern web app.
-
+The app demonstrates fullstack operations such as adding, displaying, updating, and deleting data from a PostgreSQL database. Additionally, it integrates a third-party API to fetch and display random cat facts, providing an example of how to consume external data in a web app. It is designed to help students understand how frontend, backend, databases, and APIs work together in a modern web development workflow.
