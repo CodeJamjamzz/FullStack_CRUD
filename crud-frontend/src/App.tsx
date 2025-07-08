@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/NavBar'
 import TableList from './components/TableList'
 import ModalForm from './components/ModalForm'
+import FactList from './components/FactList'
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 
@@ -98,6 +99,7 @@ function App() {
       <NavBar onOpen={() => {handleOpen('insert')}} onSearch={setSearchTerm}/>
       <TableList tableData={tableData} setTableData={setTableData} onOpen={(mode, client) => handleOpen(mode, client)} searchTerm={searchTerm} handleDelete={handleDelete}/>
       <ModalForm isOpen={isOpen} mode={modalMode} onClose={() => setOpen(false)} OnSubmit={handleSubmit} studentData={studentData}/>
+      <FactList />
     </>
   )
 }
