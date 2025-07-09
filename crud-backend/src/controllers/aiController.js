@@ -1,4 +1,7 @@
-import axios from 'axios'; // ✅ use 'from', not 'as'
+import axios from 'axios'; 
+import env from 'dotenv'
+
+env.config()
 
 export const getSummary = async (req, res) => {
   const { essay } = req.body;
@@ -23,7 +26,7 @@ export const getSummary = async (req, res) => {
       },
       {
         headers: {
-          Authorization: 'Bearer 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',
+          Authorization: `Bearer ${process.env.APIKEY}`,
           'HTTP-Referer': 'http://localhost:3000', // optional
           'X-Title': 'MyApp', // optional
           'Content-Type': 'application/json'
